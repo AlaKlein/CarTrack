@@ -128,63 +128,59 @@ public class CarTrack {
 
         x = car.getX();
         y = car.getY();
-        while (true) {
 
-            driveUp(25);
-            if (car.getY() == 25) {
-                turnLeft(-90);
-            }
-
-            driveLeft(350);
-            if (car.getX() == 350) {
-                turnLeft(-180);
-            }
-
-            driveDown(170);
-            if (car.getY() == 170) {
-                turnLeft(-270);
-            }
-
-            driveRight(366);
-            if (car.getX() == 366) {
-                turnRight(-180);
-            }
-
-            driveDown(198);
-            if (car.getY() == 198) {
-                turnLeft(-270);
-            }
-
-            driveRight(381);
-            if (car.getX() == 381) {
-                turnRight(-180);
-            }
-
-            driveDown(285);
-            if (car.getY() == 285) {
-                turnRight(-90);
-            }
-
-            driveLeft(265);
-            if (car.getX() == 265) {
-                turnRight(0);
-            }
-
-            driveUp(29);
-            if (car.getY() == 29) {
-                turnLeft(-90);
-            }
-
-            driveLeft(46);
-            if (car.getX() == 46) {
-                turnLeft(-180);
-            }
-
-            driveDown(355);
-            System.out.println("FIM");
-
-            break;
+        driveUp(25);
+        if (car.getY() == 25) {
+            turnLeft(-90);
         }
+
+        driveLeft(350);
+        if (car.getX() == 350) {
+            turnLeft(-180);
+        }
+
+        driveDown(170);
+        if (car.getY() == 170) {
+            turnLeft(-270);
+        }
+
+        driveRight(366);
+        if (car.getX() == 366) {
+            turnRight(-180);
+        }
+
+        driveDown(198);
+        if (car.getY() == 198) {
+            turnLeft(-270);
+        }
+
+        driveRight(381);
+        if (car.getX() == 381) {
+            turnRight(-180);
+        }
+
+        driveDown(285);
+        if (car.getY() == 285) {
+            turnRight(-90);
+        }
+
+        driveLeft(265);
+        if (car.getX() == 265) {
+            turnRight(0);
+        }
+
+        driveUp(29);
+        if (car.getY() == 29) {
+            turnLeft(-90);
+        }
+
+        driveLeft(46);
+        if (car.getX() == 46) {
+            turnLeft(-180);
+        }
+
+        driveDown(355);
+        System.out.println("FIM");
 
         frame.addKeyListener(new KeyListener() {
             @Override
